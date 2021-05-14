@@ -10,6 +10,9 @@
 	</head>
 
 	<body>
+
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
 		<div align="middle" class="h1a1"><h1>СОЗДАНИЕ РЕКЛАМЫ</h1></div>
 		<div class="cont1"><p>Реклама – самый быстрый способ к продвижению. На нашем сайте подробно рассказано, как сделать собственное рекламное сообщение, что нужно учитывать, чтобы зрители обратили и закрепили внимание к рекламе. Всего несколько простых этапов и рекламное сообщение будет готово.  
 </p>
@@ -86,12 +89,19 @@
 		<hr>
 
 		<div class="cont5">
-			<p align="middle" class="test_cont"><b>ПРИМЕР РЕКЛАМНОГО РОЛИКА</b></p>
-			<p align="middle"><video width="60%" height="60%" src="img/video/video.mp4" controls="controls"></video></p>
+			<p align="middle"><b>ПРИМЕР РЕКЛАМНОГО РОЛИКА <a class="spoilerVideoButton">[Клик]</a></b></p>
+
+			<div class="spoilerDs">
+				<p align="middle"><video width="60%" height="60%" src="img/video/video.mp4" controls="controls" class="spoilerVideoShowed"></a></video></p>
+			</div>	
+
 		</div>
 
+<br>
+<hr>
+
 		<div class="cont6">
-			<p align="middle">РАЗМЕЩЕНИЕ РЕКЛАМНОГО РОЛИКА</p>
+			<p align="middle"><b>РАЗМЕЩЕНИЕ РЕКЛАМНОГО РОЛИКА</b></p>
 
 			<p>Для  того, чтобы ваш рекламный ролик увидели, вы должны его опубликовать (метод публикации зависит от средств публикации (см. «ПЕРВЫЙ ЭТАП»)). В качестве публикации можно использовать любой популярный хоcтин: Яндекс.Маркет, Google Business, Instagram и др.
 </p>
@@ -99,8 +109,26 @@
 		<p align="middle"><img src="img/img/img1.jpg"></p>
 
 		<p>Если у вас возникли вопросы, то вы можете написать мне в директ @semankas.</p>
-		
-		</div>
+
+		</div>	
+
+		<script type="text/javascript">
+
+			$(".spoilerVideoShowed").hide();
+			var openVideo = "false";
+			// $(".spoilerImgShowed").hide();
+			// var openImg = "false";
+
+			$(".spoilerVideoButton").click(function spoilerDsContOpen(event){
+				if(openVideo === "false"){
+					$(".spoilerVideoShowed").slideToggle(500);
+					openVideo = "true";
+				}else if(openVideo === "true"){
+					$(".spoilerVideoShowed").toggle(500);
+					openVideo = "false";
+				}});			
+
+		</script>
 
 	</body>
 
