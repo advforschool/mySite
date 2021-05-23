@@ -18,8 +18,8 @@
 		<div class="grid">
 
 			<div class="allContent">
-				
-				<div align="middle" class="headlineOne"><h1>КАК СОЗДАТЬ РЕКЛАМНЫЙ РОЛИК ЗА ТРИ ЭТАПА</h1></div>
+
+				<div align="left" class="headlineOne"><h3>Успешная реклама, все секреты.</h3></div>
 				<div class="contentOne">
 					<hr>
 					<p>Создатели рекламных роликов бесконечно клепают однотипные скучные видео, а после жалуются, что пользователи на них не ведутся. <br><br>
@@ -37,9 +37,25 @@
 					<hr></p>
 				</div>
 
-				<div align="middle" class="headlineTwo"><h1>ЧТО НУЖНО УЧИТЫВАТЬ, ЧТОБЫ СОЗДАТЬ РЕКЛАМНОЕ СООБЩЕНИЕ</h1></div>
+				<div align="left" class="headlineTwo"><h4>Сожержание руководства:</h4></div>
 				<div class="contentTwo">
-					<hr> <p align="middle">ПЕРВЫЙ ЭТАП</p> <hr>
+					<hr>
+					<ul>
+						<li><a href="#one" class="blackA">Что нужно учитывать, что-бы создать рекламное сообщение.</a></li>
+							<ul>
+								<li><a href="#two" class="blackA">Первый этап.</a></li>
+								<li><a href="#three" class="blackA">Второй этап.</a></li>
+								<li><a href="#four" class="blackA">Третий этап.</a></li>
+							</ul>
+						<li><a href="#five" class="blackA">Пример рекламного ролика.</a></li>
+						<li><a href="#six" class="blackA">Размещение рекламного ролика.</a></li>
+					</ul>
+					<hr>
+				</div>
+
+				<div align="left" class="headlineThree" id="one"><h3>Что нужно учитывать, что-бы создать рекламное сообщение.</h3></div>
+				<div class="contentThree">
+					<hr> <p align="middle" id="two">Первый этап.</p> <hr>
 
 					<p>Для создания рекламы, нужно сначала определить, какими средствами вы будете публиковать его. <br><br>
 
@@ -54,7 +70,7 @@
 					<b>Во вторую очередь</b> задумайтесь о психических параметрах. Узнав всего лишь характер, образ жизни и т.п., можно сделать многие выводы и предложить для каждого свое, что будет им интересно.</p>
 					<hr>
 
-					<p align="middle">ВТОРОЙ ЭТАП </p> <hr>
+					<p align="middle" id="three">Второй этап.</p> <hr>
 
 					<p>Чтобы реклама была эффективна, нужно чтобы она как-то взаимодействовала с аудиторией. Поэтому стоит выяснить, как это делать. <br><br>
 
@@ -65,7 +81,7 @@
 					Сила рекламного воздействия зависит от – <b>повторяемости информации</b>. Мало сказать один раз, для получения эффекта необходимо это повторять. Если ты посмотришь одну и ту же рекламу несколько раз, то она останется у тебя в голове, а может даже и поменяет твои взгляды к нему. Помимо этого нужна понимать, что малое количество информации запоминается на много легче, поэтому рекламу нужно передавать в легкой форме.</p> 
 					<hr>
 
-					<p align="middle">ТРЕТИЙ ЭТАП</p> <hr>
+					<p align="middle" id="four">Третий этап.</p> <hr>
 
 					<p>Привлечение человека к рекламе зависит от разных факторов, но помимо них, в рекламной деятельности используют приемы привлечения к рекламе. <br><br>
 
@@ -82,21 +98,18 @@
 					<hr>
 				</div>
 
-				<div align="middle" class="headlineThree"><h1>ПРИМЕР РЕКЛАМНОГО РОЛИКА</h1></div>
-				<div>
+				<div align="left" class="headlineFour" id="five"><h3>Пример рекламного ролика.</h3></div>
+				<div class="contentFour">
 					<hr>
-					<p align="middle"><input class="spoilerVideoButton" type="submit" value="[Клик]"></p>
 					<p align="middle"><video class="spoilerVideoShowed" src="img/video/video.mp4" controls="controls"></video></p>
 					<hr>
 				</div>
 
-				<div align="middle" class="headlineFour"><h1>РАЗМЕЩЕНИЕ РЕКЛАМНОГО РОЛИКА</h1></div>
-				<div class="contentThree">
+				<div align="left" class="headlineFive" id="six"><h3>Размещение рекламного ролика.</h3></div>
+				<div class="contentFive">
 					<hr>
 					<p>Для  того, чтобы ваш рекламный ролик увидели, вы должны его опубликовать (метод публикации зависит от средств публикации (см. «ПЕРВЫЙ ЭТАП»)). В качестве публикации можно использовать любой популярный хоcтин: Яндекс.Маркет, Google Business, Instagram и др.</p>
 					<hr>
-
-					<p align="middle"><input class="spoilerImgButton" type="submit" value="[Клик]"></p>
 					<p align="middle"><img class="spoilerImgShowed" src="img/img/img1.jpg"></p>
 					<hr>
 				</div>
@@ -125,38 +138,6 @@
 
 
 			// setTimeout(joke, 240000);
-
-			$(".spoilerVideoShowed").hide();
-			$(".spoilerVideoButton").show();
-			var openVideo = "false";
-			$(".spoilerImgShowed").hide();
-			$(".spoilerImgButton").show();
-			var openImg = "false";
-
-			$(".spoilerVideoButton").click(function spoilerDsContOpen(event){
-				if(openVideo === "false"){
-					$(".spoilerVideoShowed").slideToggle(500);
-					openVideo = "true";
-				}else if(openVideo === "true"){
-					$(".spoilerVideoShowed").toggle(500);
-					openVideo = "false";
-				}});
-
-			$(".spoilerImgButton").click(function spoilerTgContOpen(event){
-				if(openVideo === "false"){
-					$(".spoilerImgShowed").slideToggle(500);
-					$(".spoilerImgButton").hide();
-					openImg = "true";
-				}else if(openImg === "true"){
-					$(".spoilerImgShowed").toggle(500);
-					$(".spoilerImgButton").show();
-					openImg = "false";
-				}});
-			$(".spoilerImgShowed").click(function spoilerDsContOpen(event){
-					$(".spoilerImgShowed").toggle(500);
-					$(".spoilerImgButton").show();
-					openImg = "false";
-				});
 
 		</script>
 	</body>
