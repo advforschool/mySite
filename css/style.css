@@ -1,3 +1,24 @@
-.cont1, .cont2, .cont3, .cont4{font-size: 18px;}
-.stage_one, .stage_two, .stage_three{margin-top: 12px;font-size: 18px; font-stretch: ultra-expanded;}
-.spoilerVideoButton{text-decoration: underline; color: blue;}
+html{background-color: white;}
+
+body{padding: 20px; margin: 0;}
+.spoilerVideoButton,.spoilerImgButton{text-decoration: underline; color: blue;}
+
+.grid{
+	display: grid;
+	grid-template-columns: 0.15fr 0.15fr 2.7fr 0.15fr 0.15fr;
+	grid-template-rows: 1fr;
+}
+
+.allContent{
+	grid-column: 3/4;
+}
+
+.headlineOne,.headlineTwo,.headlineThree,.headlineFour{
+	border: 1px solid #1D2329FF;
+}
+
+.contentOne,.contentTwo,{
+	padding-top: 10px;
+	padding-bottom: 25px;
+	font-size: 18px;
+}
